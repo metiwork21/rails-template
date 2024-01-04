@@ -1,0 +1,23 @@
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/*'
+  SuggestExtensions:
+    rubocop-rails: [rails]
+  NewCops: enable
+Metrics/MethodLength:
+  Max: 20
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Layout:
+  Metrics/LineLength:
+    Max: 140
+
